@@ -1,0 +1,674 @@
+/*************************
+Base Styles
+*************************/
+
+html {
+	color:#333;
+	font-size: 1em;
+	line-height: 1.4;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+	background-color: #001c32;
+	color: #999;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	margin: 0;
+}
+
+#wrapper {
+	display: flex;
+	max-width: 100%;
+	padding: 0 5%;
+	flex-direction: column;
+}
+
+a {
+	text-decoration: none;
+	color: #999;
+}
+
+img {
+	max-width: 100%;
+}
+
+h3 {
+	margin: 0 0 1em 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0 0 0 7.5%;
+}
+
+h1 {
+	font-family: "Playfair Display", serif;
+	margin: 15px 0;
+	font-size: 1.75em;
+	font-weight: normal;
+	line-height: 0.9em;
+}
+
+h2 {
+	font-size: 1em;
+	margin: -5px 0 0;
+	font-weight: normal;
+}
+
+/*************************
+Header
+*************************/
+
+header {
+	display: flex;
+	margin: 0 0 15px 0;
+	width: 100%;
+	background-color: #002947;
+	flex-direction: column;
+}
+
+#pick {
+	display: flex;
+	justify-content: center;
+	border: 1px solid #999;
+	padding-bottom: 15px;
+}
+
+#logo {
+	text-align: center;
+	margin: 0;
+}
+
+/*************************
+Navigation
+*************************/
+
+nav {
+	display: flex;
+	text-align: center;
+	background-color: #001c32;
+	border-bottom: 1px solid #999;
+	width: 100%;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+	margin: 0 10px;
+	padding: 0;
+}
+
+nav li {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+nav a {
+	font-weight: 700;
+	padding: 10px 10px;
+}
+
+.selected {
+	color: #047000;
+}
+
+nav a:hover {
+	color: #047000;
+}
+
+/*************************
+Footer
+*************************/
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size: 0.75em;
+	text-align: center;
+	padding-top: 75px;
+	color: #ccc;
+	clear: both;
+}
+
+footer a {
+	display: flex;
+	justify-content: center;
+}
+
+#copy {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding-top: 10px;
+}
+
+#holdThis {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100%;
+}
+
+.social-icon {
+	display: flex;
+	justify-content: center;
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+}
+
+/*************************
+Page: Home
+*************************/
+
+
+#gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+} 
+
+#this {
+	margin: auto;
+	text-align: center;
+	font-weight: bold;
+}
+#gallery li {
+	height: auto;
+	width: auto;
+	margin: 2.5% 0;
+	color: #bdc3c7;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	background-color: #002947;
+	border: 1px solid #999;
+}
+
+#gallery a {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+	height: auto;
+	width: auto;
+}
+
+#gallery p {
+	margin: 10px 2px;
+}
+
+#gallery a p {
+	color: #999;
+}
+
+#gallery img {
+	display: flex;
+	justify-content: center;
+	height: auto;
+	width: auto;
+}
+
+/*************************
+Page: Resume
+*************************/
+
+.experiences {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.resHead {
+	display: flex;
+	font-family: "Playfair Display", serif;
+	margin: 15px 0;
+	font-size: 1.75em;
+	font-weight: normal;
+	line-height: 0.9em;
+	justify-content: center;
+}
+
+.resume {
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+#bTitle {
+	text-align: center;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #999;
+	flex-basis: 45%;
+}
+
+.experiences ul {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	border-bottom: 1px dashed #999;
+}
+
+.experiences li {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: auto;
+}
+
+.resume h3 {
+	margin-bottom: -.5%;
+}
+
+.skills ul {
+	padding: 0;
+}
+
+.projects a {
+	color: #047000;
+}
+
+/*************************
+Page: Contact
+*************************/
+
+section {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 0;
+}
+
+.contact-info a {
+	display: flex;
+	min-height: 20px;
+	padding: 5px 5px;
+	margin: 0 0 0 10px;
+}
+
+.fancy {
+	max-width: 20px;
+	max-height: 20px;
+	padding-right: 10px;
+}
+
+#primary {
+	/*border-bottom: 1px dashed #999;*/
+}
+
+#primary p {
+	margin: 10px 0;
+}
+
+#secondary h3 {
+	margin: 10px 0 0 0;
+}
+
+#geninfo {
+	margin-bottom: 0;
+}
+
+/*************************
+Page: DnD
+*************************/
+
+#nCombatant {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 2.5%;
+	flex-wrap: wrap;
+	border-bottom: 1px dashed #999;
+}
+
+#head h1, 
+#head p {
+	padding-left: 5%;
+}
+
+input {
+	display: flex;
+	background-color: #002947;
+	width: 40%;
+	border: 1px solid #999;
+	color: #999;
+	margin: 1%;
+	padding: 1%;
+}
+
+
+button {
+	display: flex;
+	justify-content: center;
+	background-color: #002947;
+	padding: 2.5%;
+	border: 2px solid #999;
+	color: #999;
+	margin: 2.5%;
+	width: 75%;
+}
+
+.combatFilters {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0;
+	border-bottom: 1px dashed #999;
+	padding-bottom: 2.5%;
+}
+
+.combatFilters button {
+	width: 45%;
+	margin: 1%;
+}
+
+#bigger {
+	font-size: 1.3em;
+	padding-left: 5%;
+}
+
+#combatList {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	flex-wrap: wrap;
+}
+
+.combatant,
+.working {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding: 1% 0 0;
+	margin: 2% 1%;
+	border: 1px solid #999;
+}
+
+.working {
+	padding: 0 2px;
+}
+
+.working li {
+	font-size: 1em;
+}
+
+.combatant li,
+.working li {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-basis: 30%;
+	font-size: 1.2em;
+}
+
+.nButton {
+	padding: 0;
+}
+
+.combatant .nButton,
+.working .nButton {
+	flex-basis: 50%;
+}
+
+.attr {
+	padding: 0 4px;
+}
+
+.working .tempLi {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-basis: 30%;
+	padding: 1%;
+	margin: 1% 0;
+}
+
+.tempLi p {
+	margin: 1%;
+}
+
+.tempLi input {
+	margin: 0;
+	width: 85%;
+}
+
+/********************************************************************************************************************************************************************************************************
+
+Responsive
+
+********************************************************************************************************************************************************************************************************/
+
+@media only screen and (min-width: 1130px){
+
+	/*************************
+	Header
+	*************************/
+
+	header {
+		margin-bottom: 30px;
+	}
+
+	body {
+		font-size: 1.2em;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	h2 {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	#pick {
+		border: none;
+		justify-content: flex-start;
+		margin: 0 0 0 3.5%;
+	}
+	nav {
+		background: none;
+		margin: 20px 0 0;
+	}
+
+	nav ul {
+		justify-content: flex-end;
+	}
+
+	nav li {
+		display: flex;
+		margin: 0 1.25%;
+	}
+
+	/*************************
+	Page: Home
+	*************************/
+
+	#gallery li {
+		width: 25%;
+		border: none;
+		background-color: #001c32;
+		justify-content: space-between;
+		padding: 0 1%;
+		display: flex;
+		margin: 2% 0 0 0;
+	}
+
+	#gallery ul {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#mainPic {
+		display: flex;
+		justify-content: center;
+		flex-basis: 100%;
+	}
+
+	#mainPic img {
+		max-width: 50%;
+		padding: 0 25%;
+	}
+
+	.twoWide {
+		display: flex;
+		justify-content: center;
+		flex-basis: 100%;
+		max-width: 33%;
+		padding: 0 8.5%;
+	}
+
+	#this {
+		width: 45%;
+	}
+
+	/*************************
+	Page: Resume
+	*************************/
+
+	.experiences {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.experiences ul {
+		border: none;
+	}
+
+	#bTitle {
+		border: none;
+		padding: 0;
+	}
+
+	.resHead {
+		width: 100%;
+		justify-content: flex-start;
+		margin: 30px 0;
+		padding: 0 0 2.5%;
+		border-bottom: 1px dashed #999;
+	}
+
+	.twos {
+		flex-basis: 35%;
+		padding: 0 2.5%;
+	}
+
+	.education {
+		flex-basis: 100%;
+	}
+
+	.skills {
+		flex-basis: 100%;
+	}
+
+	.projects {
+		flex-basis: 100%;
+	}
+
+	/*************************
+	Page: Contact
+	*************************/
+
+	#wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		flex-basis: 100%;
+	}
+
+	#primary {
+		display: flex;
+		width: 40%;
+		padding: 0 2.5%;
+		margin: 0;
+	}
+
+	#secondary {
+		display: flex;
+		width: 30%;
+		padding: 0 2.5%;
+		margin: 0;
+	}
+
+	.contact-info img {
+		padding-top: 4px;
+	}
+
+	/*************************
+	Page: DnD
+	*************************/
+
+	#nCombatant {
+		padding: 0;
+	}
+
+	#nCombatant input {
+		flex-basis: 15%;
+		margin: 5px;
+		padding: 1.5%;
+	}
+
+	#nCombatant button {
+		margin: 1% 0;
+		padding: 1% 0;
+		flex-basis: 20%;
+	}
+
+	.filters button {
+		flex-basis: 15%;
+		margin: 1% .5%;
+		padding: 1% 0;
+	}
+
+	.filters ul {
+		padding: 0 0 .5%;
+		margin: .5% 0 .5%;
+	}
+
+	#bigger {
+		margin: 1% 0 0;
+	}
+
+	#combatList {
+		margin: 0;
+		justify-content: center;
+	}
+
+	.combatant,
+	.working {
+		flex-basis: 40%;
+		margin-bottom: 0;
+	}
+
+	.combatant .tempLi,
+	.working .tempLi {
+		margin: 0;
+		padding: 0;
+	}
+
+}
